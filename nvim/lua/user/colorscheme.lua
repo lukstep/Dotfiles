@@ -1,4 +1,4 @@
-local colorscheme = "deus"
+local colorscheme = "neon"
 
 local is_colorschem_avaiable = pcall(vim.cmd, "colorscheme " .. colorscheme)
 
