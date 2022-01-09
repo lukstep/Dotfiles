@@ -35,6 +35,9 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
+-- Copy path to File
+keymap("n", "<leader>cp", ":let @+ = expand('%:p')<CR>", opts)
+ 
 -- INSERT MODE
 -- Press jk fast to enter
 keymap("i", "jk", "<ESC>", opts)
