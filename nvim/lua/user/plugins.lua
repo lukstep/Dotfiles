@@ -57,7 +57,12 @@ return packer.startup(function(use)
     use "hrsh7th/cmp-path"              -- path completions
     use "hrsh7th/cmp-cmdline"           -- cmdline completions
     use "hrsh7th/cmp-nvim-lua"          -- neovim lua completions
-    use "saadparwaiz1/cmp_luasnip"      -- snippet completions
+    use "hrsh7th/cmp-nvim-lsp"          -- neovim lsp completions
+    use "saadparwaiz1/cmp_luasnip"      -- snppet completions
+
+    -- LSP
+    use "neovim/nvim-lspconfig"         -- enable LSP
+    use "williamboman/nvim-lsp-installer" -- simply to use language server installer   
 
     -- Snippets
     use "L3MON4D3/LuaSnip"              --snippet engine
