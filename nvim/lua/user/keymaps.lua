@@ -17,7 +17,7 @@ vim.g.maplocalleader = " "
 
 -- NORMAL MODE
 -- File explorer
-keymap("n", "<leader>e", ":Lex 30<CR>", opts)
+keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 
 -- Better window navigation
 keymap("n", "<C-h>", "<C-w>h", opts)
