@@ -19,6 +19,17 @@ vim.g.maplocalleader = " "
 -- File explorer
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 
+-- Bufferline
+keymap("n", "<leader>1", "<Cmd>BufferLineGoToBuffer 1<CR>", opts)
+keymap("n", "<leader>2", "<Cmd>BufferLineGoToBuffer 2<CR>", opts)
+keymap("n", "<leader>3", "<Cmd>BufferLineGoToBuffer 3<CR>", opts)
+keymap("n", "<leader>4", "<Cmd>BufferLineGoToBuffer 4<CR>", opts)
+keymap("n", "<leader>5", "<Cmd>BufferLineGoToBuffer 5<CR>", opts)
+keymap("n", "<leader>6", "<Cmd>BufferLineGoToBuffer 6<CR>", opts)
+keymap("n", "<leader>7", "<Cmd>BufferLineGoToBuffer 7<CR>", opts)
+keymap("n", "<leader>8", "<Cmd>BufferLineGoToBuffer 8<CR>", opts)
+keymap("n", "<leader>9", "<Cmd>BufferLineGoToBuffer 9<CR>", opts)
+
 -- Better window navigation
 keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)
