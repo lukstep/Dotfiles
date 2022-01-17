@@ -65,6 +65,7 @@ return packer.startup(function(use)
     -- LSP
     use "neovim/nvim-lspconfig"         -- enable LSP
     use "williamboman/nvim-lsp-installer" -- simply to use language server installer
+    use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
 
     -- Snippets
     use "L3MON4D3/LuaSnip"              --snippet engine
