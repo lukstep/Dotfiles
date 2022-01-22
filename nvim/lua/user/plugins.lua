@@ -92,6 +92,7 @@ return packer.startup(function(use)
     use "moll/vim-bbye"
     use 'nvim-lualine/lualine.nvim'
     use "akinsho/toggleterm.nvim"
+    use 'goolord/alpha-nvim'
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
