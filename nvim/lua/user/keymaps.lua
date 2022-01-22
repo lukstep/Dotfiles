@@ -19,6 +19,11 @@ vim.g.maplocalleader = " "
 -- File explorer
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 
+-- ToggleTerm
+keymap("n", "<leader>tig", "<cmd>lua _TIG_TOGGLE()<CR>", opts)
+keymap("n", "<leader>ht", "<cmd>lua _HTOP_TOGGLE()<CR>", opts)
+keymap("n", "<leader>py", "<cmd>lua _PYTHON_TOGGLE()<CR>", opts)
+
 -- Bufferline
 keymap("n", "<leader>1", "<Cmd>BufferLineGoToBuffer 1<CR>", opts)
 keymap("n", "<leader>2", "<Cmd>BufferLineGoToBuffer 2<CR>", opts)
