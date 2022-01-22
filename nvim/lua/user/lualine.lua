@@ -62,6 +62,11 @@ local spaces = function()
 	return "spaces: " .. vim.api.nvim_buf_get_option(0, "shiftwidth")
 end
 
+local clock = function ()
+    local time = os.date('%H:%M:%S')
+    return " " .. time
+end
+
 lualine.setup({
 	options = {
 		icons_enabled = true,
@@ -77,7 +82,7 @@ lualine.setup({
 		lualine_c = {},
 		-- lualine_x = { "encoding", "fileformat", "filetype" },
 		lualine_x = { diff, spaces, "encoding", filetype },
-		lualine_y = { location },
+		lualine_y = { location, clock},
 		lualine_z = { },
 	},
 	inactive_sections = {
@@ -91,3 +96,10 @@ lualine.setup({
 	tabline = {},
 	extensions = {},
 })
+
+if _G.Statusline_timer == nil then
+    _G.Statusline_timer = vim.loop.new_timer()
+else
+    _G.Statusline_timer:stop()
+end
+_G.Statusline_timer:start(0, 1000, vim.schedule_wrap(function() vim.api.nvim_command('redrawstatus') end))
