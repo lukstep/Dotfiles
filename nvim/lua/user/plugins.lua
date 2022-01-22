@@ -61,6 +61,7 @@ return packer.startup(function(use)
     use "hrsh7th/cmp-nvim-lua"          -- neovim lua completions
     use "hrsh7th/cmp-nvim-lsp"          -- neovim lsp completions
     use "saadparwaiz1/cmp_luasnip"      -- snppet completions
+    use "lukas-reineke/indent-blankline.nvim"
 
     -- LSP
     use "neovim/nvim-lspconfig"         -- enable LSP
