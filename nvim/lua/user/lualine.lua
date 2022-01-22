@@ -81,8 +81,8 @@ lualine.setup({
 		lualine_b = { "filename" },
 		lualine_c = {},
 		-- lualine_x = { "encoding", "fileformat", "filetype" },
-		lualine_x = { diff, spaces, "encoding", filetype },
-		lualine_y = { location, clock},
+		lualine_x = { diff, spaces, "encoding", "filetype" },
+		lualine_y = { location, "progress", clock},
 		lualine_z = { },
 	},
 	inactive_sections = {
