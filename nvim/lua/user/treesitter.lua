@@ -9,7 +9,7 @@ configs.setup {
     additional_vim_regex_highlighting = true,
 
   },
-  indent = { enable = true, disable = { "yaml" } },
+  indent = { enable = false, disable = { "yaml" } },
   context_commentstring = {
       enble = true,
       enable_autocmd = false
