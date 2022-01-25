@@ -49,9 +49,9 @@ return packer.startup(function(use)
 
     -- Color themes
     use "rafamadriz/neon"
-    use "Mofiqul/vscode.nvim"
     use "theniceboy/nvim-deus"
     use "dracula/vim"
+    use "sainnhe/sonokai"
 
     -- Completion plugins
     use "hrsh7th/nvim-cmp"              -- The completion plugin
