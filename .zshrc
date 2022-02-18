@@ -31,6 +31,7 @@ plugins=(
 #Colorls - https://github.com/athityakumar/colorls
 source /Library/Ruby/Gems/2.6.0/gems/colorls-1.4.4/lib/tab_complete.sh
 alias lc='colorls -lA --sd'
+alias ll='colorls -lA --sd'
 
 source $ZSH/oh-my-zsh.sh
 
