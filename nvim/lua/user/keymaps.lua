@@ -19,6 +19,9 @@ vim.g.maplocalleader = " "
 -- File explorer
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 
+--Glow - markdow previewer
+keymap("n", "<leader>gl", "<cmd>Glow<CR>", opts)
+
 -- ToggleTerm
 keymap("n", "<leader>tig", "<cmd>lua _TIG_TOGGLE()<CR>", opts)
 keymap("n", "<leader>ht", "<cmd>lua _HTOP_TOGGLE()<CR>", opts)
