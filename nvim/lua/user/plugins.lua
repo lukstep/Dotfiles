@@ -96,7 +96,8 @@ return packer.startup(function(use)
     use "akinsho/toggleterm.nvim"
     use 'goolord/alpha-nvim'
     use 'lewis6991/impatient.nvim'
-    use "petertriho/nvim-scrollbar"
+    use 'petertriho/nvim-scrollbar'
+    use 'kevinhwang91/nvim-hlslens'
 
     -- Markdown
     use "ellisonleao/glow.nvim"
